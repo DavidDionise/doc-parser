@@ -6,9 +6,12 @@
   "plugins": [
     "react-hot-loader/babel",
     ["module-resolver", {
-      "root": ["./src"],
       "alias": {
-        "components": "./components"
+        "components": "./src/components",
+        "utils": "./src/utils",
+        "mui": "@material-ui/core",
+        "mui-icons": "@material-ui/icons",
+        "docs-data": "./doc-parser/parsed-docs.json"
       }
     }]
   ]
